@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una sorpresa para ti ❤️</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, pink, #ffe6f0);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px 15px;
+            color: #a31545;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            max-width: 450px;
+            margin: auto;
+            box-shadow: 0 5px 20px #d88;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        button {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 30px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #respuesta {
+            display: none;
+            font-size: 22px;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tarjeta">
+        <h1>💗 Una pregunta especial 💗</h1>
+
+        <p>
+            Me gustaría compartir contigo
+            muchos momentos bonitos.
+        </p>
+
+        <h2>¿Quieres ser mi novia? ❤️</h2>
+
+        <button onclick="aceptar()">¡Sí! 💖</button>
+
+        <div id="respuesta">
+            ¡Me acabas de hacer muy feliz! 🥹❤️
+            <p>Que esta sea la primera de muchas
+            historias bonitas juntos. 💕</p>
+        </div>
+    </div>
+
+    <script>
+        function aceptar() {
+            document.getElementById("respuesta")
+                .style.display = "block";
+
+            document.querySelector("button")
+                .textContent = "¡Sí, quiero! 💞";
+        }
+    </script>
+</body>
+</html>
